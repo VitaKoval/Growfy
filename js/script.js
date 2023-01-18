@@ -1,16 +1,11 @@
 "use strict"
 
-const reviewsSwiper = document.querySelector('.swiper-reviews');
+document.addEventListener('click', documentClick);
 
-if (reviewsSwiper) {
-	const swiper = new Swiper('.swiper-reviews', {
-		// Optional parameters
-		autoHeight: true,
-		loop: true,
-		// If we need pagination
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true
-		},
-	});
+function documentClick(e) {
+	const targetItem = e.target;
+
+	if (targetItem.closest(".icon-menu")) {
+	document.documentElement.classList.toggle('menu-open')
+}
 }
