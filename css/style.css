@@ -89,6 +89,7 @@ body {
 }
 .page__testimonials {
 }
+.page__blog {}
 /* ==================================================================== */
 /* ==================================================================== */
 /* --------- HEADER ---------- */
@@ -987,4 +988,54 @@ flex: 1 1 auto;
 				.item-testimonial {
 					padding: 30px 15px;
 				}
+}
+
+/*====================================================================*/
+/* ==================================================================== */
+/* ---------- BLOG ---------- */
+.blog {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.blog__container {}
+
+.blog__content {}
+
+.blog__header {
+	margin-bottom: 64px;
+}
+
+.blog__list {}
+
+.blog__item {}
+
+.item-blog {}
+
+.item-blog__category {}
+
+.item-blog__image {}
+
+.item-blog__date {}
+
+.item-blog__title {}
+
+.item-blog__link-title {}
+
+.item-blog__text {}
+
+.item-blog__link {}
+
+@media (max-width: 991.98px) {
+	.blog {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.blog {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 }
