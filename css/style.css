@@ -79,6 +79,8 @@ body {
 
 .page__main {
 }
+.page__clients {
+}
 
 /* ==================================================================== */
 /* ==================================================================== */
@@ -294,6 +296,7 @@ body {
 
 .main {
   padding-top: 160px;
+  padding-bottom: 100px;
 }
 
 .main__container {
@@ -381,6 +384,7 @@ body {
 @media (max-width: 991.98px) {
   .main {
     padding-top: 120px;
+    padding-bottom: 60px;
   }
   .main__title {
     font-size: 44px;
@@ -388,17 +392,18 @@ body {
 }
 /* мобайл ферст */
 @media (min-width: 768px) {
-.main__title {
-max-width: 520px;
-}
-.main__text {
-	max-width: 500px;
-}
+  .main__title {
+    max-width: 520px;
+  }
+  .main__text {
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 767.98px) {
   .main {
     padding-top: 100px;
+    padding-bottom: 30px;
   }
   .main__container {
     flex-direction: column;
@@ -409,6 +414,11 @@ max-width: 520px;
 
   .main__title {
     font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .main__text {
+    margin-bottom: 15px;
   }
 }
 
@@ -416,4 +426,46 @@ max-width: 520px;
   .main__actions {
     flex-direction: column;
   }
+}
+
+/* ==================================================================== */
+/* ==================================================================== */
+/* ---------- CLIENTS ---------- */
+.clients {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.clients__container {
+}
+
+.clients__title {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.57; /* 22/14 */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 44px;
+}
+
+.clients__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    gap: 15px
+}
+
+.clients__item img {
+	max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+	.clients__title {
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+		.clients__list {
+			gap: 8px;
+		}
 }
