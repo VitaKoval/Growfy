@@ -91,6 +91,15 @@ body {
 }
 .page__blog {
 }
+.page__start {
+	margin-bottom: 100px;
+}
+
+@media (man-width: 991.98px ) {
+	.page__start {
+			margin-bottom: 50px;
+		}
+}
 /* ==================================================================== */
 /* ==================================================================== */
 /* --------- HEADER ---------- */
@@ -638,6 +647,7 @@ body {
 @media (max-width: 1100px) {
   .services__container {
     flex-direction: column;
+
   }
 }
 
@@ -991,7 +1001,7 @@ body {
 /* ---------- BLOG ---------- */
 .blog {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .blog__container {
@@ -1050,92 +1060,165 @@ body {
 }
 
 .item-blog__image {
-	position: relative;
-	display: block;
-	padding-bottom: 49.238579%; /* 194/394 */
+  position: relative;
+  display: block;
+  padding-bottom: 49.238579%; /* 194/394 */
 }
 .item-blog__image img {
-	position: absolute; 
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .item-blog__body {
-	padding: 36px 26px 40px 26px;
+  padding: 36px 26px 40px 26px;
 }
 
 .item-blog__date {
-	display: block;
-	font-size: 16px;
-	line-height: 1.5; /* 24/16 */
-	color: rgba(129, 129, 139, 0.9);
-	margin-bottom: 20px;
+  display: block;
+  font-size: 16px;
+  line-height: 1.5; /* 24/16 */
+  color: rgba(129, 129, 139, 0.9);
+  margin-bottom: 20px;
 }
 
 .item-blog__title {
-	font-weight: 400;
-		font-size: 19px;
-		line-height: 1.42; /* 27/19 */
-		color: #FFFFFF;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.42; /* 27/19 */
+  color: #ffffff;
 
-		margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .item-blog__title:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .item-blog__link-title {
 }
 
 .item-blog__text {
-	line-height: 1.5; /* 24/16 */
-	margin-bottom: 21px;
+  line-height: 1.5; /* 24/16 */
+  margin-bottom: 21px;
 }
 
 .item-blog__link {
-	font-weight: 300;
-		font-size: 14px;
-		line-height: 1.57; /* 22/14 */
-		color: #3D96F4;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.57; /* 22/14 */
+  color: #3d96f4;
 }
 .item-blog__link:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media (max-width: 1100px) {
-	.blog__list {
-		gap: 20px;
-	}
-		.item-blog__body {
-			padding: 25px 15px;
-		}
+  .blog__list {
+    gap: 20px;
+  }
+  .item-blog__body {
+    padding: 25px 15px;
+  }
 }
 
 @media (max-width: 991.98px) {
   .blog {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   .blog__header {
-  	margin-bottom: 44px;
+    margin-bottom: 44px;
   }
 }
 
 @media (max-width: 767.98px) {
   .blog {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .blog__header {
     margin-bottom: 50px;
   }
   .blog__list {
-	grid-template-columns: auto;
+    grid-template-columns: auto;
   }
   .blog__header {
-  	margin-bottom: 25px;
+    margin-bottom: 25px;
   }
+}
+
+/*====================================================================*/
+/* ==================================================================== */
+/* ---------- START ---------- */
+.start {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.start__container {
+  display: flex;
+  align-items: center;
+
+background: rgba(129, 129, 139, 0.1);
+	border-radius: 30px;
+	padding: 52px 143px;
+}
+
+.start__column {
+  flex: 0 1 50%;
+  text-align: center;
+}
+
+.start__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.4; /* 45/32 */
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.start__text {
+	display: inline-block;
+	font-weight: 300;
+	line-height: 1.5; /* 24/16 */
+	max-width: 340px;
+}
+
+.start__actions {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+.start__button {
+}
+
+@media (max-width: 991.98px) {
+	.start__container {
+flex-direction: column;
+align-items: stretch;
+	}
+
+	.start__text {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.start__title {
+			font-size: 24px;
+		}
+}
+
+@media (max-width: 479.98px) {
+	.start__container {
+		padding: 32px 50px;
+	}
+	.start__actions {
+		flex-direction: column;
+	}
 }
